@@ -33,6 +33,9 @@ public class MovieRatingCntlr {
 			return "movie_rating_form";
 		}
 		movieRatingRepository.save(movieRating);
+		/**
+		 * Following two lines are not used in the movie_rating_show template
+		 */
 		Iterable<MovieRating> movieRatings = movieRatingRepository.findAll();
 		model.addAttribute("movieRatings",movieRatings);
 		return "movie_rating_show";
