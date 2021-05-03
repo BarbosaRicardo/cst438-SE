@@ -1,13 +1,13 @@
-package cst438;
+package cst438wk1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Cst438Week1Application {
+public class Cst438Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Cst438Week1Application.class, args);
+		SpringApplication.run(Cst438Application.class, args);
 	}
 
 }
