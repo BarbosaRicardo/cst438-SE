@@ -15,6 +15,12 @@ public class CityInfo {
 	 double temp;
 	 String time;
 	 
+	 /**
+	  * Need a default constructor for Mock test
+	  * 
+	  * public CityInfo() {}
+	  */
+	 
 	 public CityInfo(City city, String countryName, double temp, String time) {
 		 this.id = city.getId();
 		 this.name = city.getName();
