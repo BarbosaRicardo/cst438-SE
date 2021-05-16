@@ -32,6 +32,10 @@ public class CityService {
 		temp = weatherService.getTempAndTime(cityName);
 		time = weatherService.getTempAndTime(cityName);
 		
+		/**
+		 * The temp needs to convert from Kelvin to Fahrenheit
+		 * The time needs to convert to local time
+		 */
 		CityInfo cityInfo = new CityInfo(city.getId(), city.getName(), city.getCountryCode(), 
 				country.getName(), city.getDistrict(), city.getPopulation(),
 				temp.temp, time.timeToString());
