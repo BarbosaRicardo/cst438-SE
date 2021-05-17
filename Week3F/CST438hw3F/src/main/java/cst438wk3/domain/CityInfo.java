@@ -146,6 +146,8 @@ public class CityInfo {
 		this.time = time;
 	}
 	
+	// I would like to suggest to use Math.round to round the temperature
+	//	to the nearest integer
 	public String convertToFahrenheit() {
 		double temperature = (temp - 273.15) * 9/5 + 32;
 		String tempF = Double.toString(temperature);
