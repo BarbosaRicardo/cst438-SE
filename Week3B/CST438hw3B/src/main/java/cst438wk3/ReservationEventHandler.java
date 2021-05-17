@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
+// The backend receiver is good, it does receive each message from the Rabbit queue
 @RabbitListener(queues = "city-reservation-q1")
 public class ReservationEventHandler {
 

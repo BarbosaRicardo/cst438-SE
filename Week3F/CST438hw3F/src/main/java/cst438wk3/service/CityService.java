@@ -54,6 +54,7 @@ public class CityService {
 		return cityInfo;
 	}
 	
+	// The requestReservation is good and has sent message to the fanout exchange
 	public void requestReservation( String cityName, String level, String email) {
 		String msg  = "{\"cityName\": \""+ cityName + "\", \"level\": \""+level+"\", \"email\": \""+email+"\"}" ;
 		System.out.println("Sending message:"+msg);

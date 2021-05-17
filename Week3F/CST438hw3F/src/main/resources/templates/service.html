@@ -48,6 +48,7 @@ text-align: left;
 		</tr>
 		<tr>
 			<th>Local Weather</th>
+			<!-- Maybe put degree F after the conversion like using &#8457 -->
 			<td th:text="${cityInfo.convertToFahrenheit()}"></td>
 		</tr>
 		<tr>
@@ -58,6 +59,8 @@ text-align: left;
 	<form action="#" th:action="@{/cities/reservation(city=${cityInfo.name})}"  method="post">
 	<p>For a fabulous weekend get away for 2 to [[${cityInfo.name}]] sign up here.</p>
 	<label>Email</label><input type="email" name="email"/><br/>
+	<!-- I would suggest to check one of the radio button using "checked"
+		then you won't have error page if user forgets to check one of the buttons  -->
 	<input type="radio" id="luxury" name="level" value="luxury">
 	<label for="luxury">Luxury $1000</label><br>
 	<input type="radio" id="moderate" name="level" value="moderate">
